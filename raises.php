@@ -14,9 +14,9 @@
 <body>
 <?php
 
-include("db-connect-info.php");
+include("database/db-connect-info.php");
 
-$connect=mysqli_connect($server, $user, $pw, $db);
+$connect=mysqli_connect(SERVER, USER, PW, DB);
 
 if( !$connect) 
 {
